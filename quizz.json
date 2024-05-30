@@ -1,0 +1,78 @@
+{
+    "Maths": {
+        "Arithemetic": [
+            {
+                "Question": "2+2",
+                "Options": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "Answer": 4,
+                "Level": "Easy"
+            },
+            {
+                "Question": "3+2",
+                "Options": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "Answer": 5,
+                "Level": "Easy"
+            },
+            {
+                "Question": "Which of them is a prime number",
+                "Options": [
+                    1,
+                    4,
+                    7,
+                    9
+                ],
+                "Answer": 7,
+                "Level": "Medium"
+            }
+        ],
+        "Calculus": [
+            {
+                "Question": "Derivative of 2x at x = 10",
+                "Options": [
+                    2,
+                    4,
+                    6,
+                    8
+                ],
+                "Answer": 2,
+                "Level": "Medium"
+            },
+            {
+                "Question": "Integrate lnx",
+                "Options": [
+                    "2x",
+                    "3x",
+                    "xlnx-x",
+                    "1/x"
+                ],
+                "Answer": "xlnx-x",
+                "Level": "Hard"
+            }
+        ]
+    },
+    "Geography": {
+        "World": [
+            {
+                "Question": "Largest country",
+                "Options": [
+                    "India",
+                    "USA",
+                    "Canada",
+                    "Russia"
+                ],
+                "Answer": "Russia",
+                "Level": "Easy"
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+    <script src="./calculator.js" defer></script>
+    <script src="startQuiz.js" defer></script>
+</head>
+
+<body>
+    <header>Quizzer</header>
+    <main>
+        <div id="r1">
+            <div id="categorieSearch"><select>
+                    <option value="All">All</option>
+                </select></div>
+            <div id="quizSearch"><input type="text" id="searchBox" placeholder="Search a quiz"></div>
+        </div>
+        <div id="r2"></div>
+
+
+        <div id="r3">
+            <div id="qPanel">
+                <div id="infoBar">
+                    <div id="quizPath"></div>
+                    <div id="timer"><span id="hourS">00</span>:<span id="minS">00</span>:<span id="secS">00</span></div>
+                </div>
+                <div id="quest">
+                    <div id="question"></div>
+                    <div id="qOpts"></div>
+                    <div id="controls"><div id="skipButton" onclick="changeQuestion()">Skip</div><div id="nextButton" onclick="changeQuestion()">Next</div></div>
+                </div>
+            </div>
+            <div id="calculator">
+                <div id="screen"><input type="text" id="calcScreen" value="0"></div>
+                <div id="options">
+                    <div id="buttons">
+                        <div class="calcButton" value="1">1</div>
+                        <div class="calcButton" value="2">2</div>
+                        <div class="calcButton" value="3">3</div>
+                        <div class="calcButton" value="4">4</div>
+                        <div class="calcButton" value="5">5</div>
+                        <div class="calcButton" value="6">6</div>
+                        <div class="calcButton" value="7">7</div>
+                        <div class="calcButton" value="8">8</div>
+                        <div class="calcButton" value="9">9</div>
+                        <div class="calcButton" value="X">x</div>
+                        <div class="calcButton" value="0">0</div>
+                        <div class="calcButton" value="AC">AC</div>
+                    </div>
+                    <div id="arithemetic">
+                        <div class="calcButton" value="+">+</div>
+                        <div class="calcButton" value="-">-</div>
+                        <div class="calcButton" value="*">*</div>
+                        <div class="calcButton" value="/">/</div>
+                        <div class="calcButton" value="log()">logy</div>
+                        <div class="calcButton" value="!">!y</div>
+                        <div class="calcButton" value="^">^y</div>
+                        <div class="calcButton" id="special1">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="r4">
+            <div id="heading">Your Progress report</div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

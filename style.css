@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: f1;
+    src: url(./resource/productSans.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: f1;
+    background-color: rgb(193, 224, 250);
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+header{
+    font-size: 170%;
+    text-align: center;
+    padding: 2.5vh;
+}
+main{
+    width: 90%;
+    padding: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#r1{
+    width:70%;
+    font-size: 140%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#categorieSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#categorieSearch>select{
+    padding: 1vh;
+    font-family: f1;
+    background-color: transparent;
+    border: 0.25vh solid black;
+    border-radius: 1vh;
+}
+#quizSearch{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quizSearch>input{
+    width: 90%;
+    padding: 1vh;
+    background-color: white;
+    border: none;
+    font-family: f1;
+    border-radius: 1vh;
+}
+#r2{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5vh;
+    gap: 2.5vh;
+}
+.category{
+    width: 100%;
+}
+.categoryName{
+    font-size: 120%;
+    font-weight: bold;
+}
+.quizz{
+    border-radius: 1vh;
+    box-shadow: 0px 0px 0.25vh black;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+.quizzName{
+    padding: 2.5vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+.level{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.level>div{
+    padding: 2.5vh;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+.level>div:hover{
+    transform: scale(1.1);
+}
+.ez{
+    width: 100%;
+    background-color: rgb(2, 167, 2);
+    color: white;
+    border-bottom-left-radius: 1vh;
+}
+.med{
+    width: 100%;
+    background-color: rgb(252, 227, 0);
+}
+.hard{
+    width: 100%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    border-bottom-right-radius: 1vh;
+}
+
+#r1,#r2{
+    /* display: none; */
+}
+
+#r3{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+#r3>div{
+    width: 100%;
+    height: 100%;
+}
+
+#calculator{
+    width: 70%!important;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#screen{
+    width: 90%;
+    padding: 2vh;
+    border-radius: 1vh;
+    background-color: white;
+    font-size: 140%;
+    text-align: right;
+}
+#calcScreen{
+    font-family: f1;
+    background-color: transparent;
+    border: none;
+    font-size: 140%;
+    text-align: right;
+    width: 90%;
+}
+#options{
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    align-items: center;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+    gap: 1vh;
+}
+#arithemetic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1vh;
+}
+.calcButton{
+    border-radius: 1vh;
+    box-shadow: 0px 0px 0.25vh black;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5vh;
+    height: 5vh;
+}
+#special1{
+    width: 180%;
+}
+
+
+#qPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5vh;
+
+    width: 20%;
+}
+#infoBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+#quest{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75%;
+    gap: 3.5vh;
+}
+#qOpts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2vh;
+    width: 100%;
+}
+.optionBox{
+    border-radius: 1vh;
+    box-shadow: 0px 0px 0.5vh black;
+    padding: 1vh;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+.optionBox:hover{
+    background-color: rgb(175, 174, 174);
+}
+#controls{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#nextButton,#skipButton{
+    padding: 1vh;
+    width: 30%;
+    border-radius: 1vh;
+    text-align: center;
+    box-shadow: 0px 0px 0.25vh black;
+    transition: all 0.2s linear;
+}
+#nextButton{
+    display: none;
+}
+#nextButton:hover,#skipButton:hover{
+    transform: scale(1.1);
+}
+#r3{
+    display: none;
+}
